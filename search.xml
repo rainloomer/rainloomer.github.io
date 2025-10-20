@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Homepage简单使用</title>
+      <link href="/2025/10/20/homepage%E8%AF%B4%E6%98%8E/"/>
+      <url>/2025/10/20/homepage%E8%AF%B4%E6%98%8E/</url>
+      
+        <content type="html"><![CDATA[<h1 id="示例图片"><a href="#示例图片" class="headerlink" title="示例图片"></a>示例图片</h1><p><img src="https://s2.loli.net/2025/10/04/K4Cg6R35lSFBYN2.jpg"></p><h1 id="基本信息"><a href="#基本信息" class="headerlink" title="基本信息"></a>基本信息</h1><p>项目名称：Homepage</p><p>仓库地址：<a href="https://github.com/gethomepage/homepage">https://github.com/gethomepage/homepage</a></p><p>开源协议：GPL-3.0</p><p>开发语言：TypeScript &#x2F; React</p><h1 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h1><p>Homepage 是一个开源的、自托管的仪表盘（Dashboard）项目，主要用于搭建个人或团队的 起始页 &#x2F; 服务导航页。<br>它提供了现代化的界面和高度自定义的配置方式，可以集中展示：</p><p>🖥 常用服务链接（带图标、状态显示）</p><p>📊 系统监控（CPU、内存、硬盘、网络）</p><p>📦 Docker &#x2F; Kubernetes 容器状态</p><p>⏰ 日历、天气、新闻等小组件</p><p>🔑 支持多用户与身份验证（OAuth &#x2F; Authelia &#x2F; Keycloak 等）</p><h1 id="快速部署示例（Docker-Compose）"><a href="#快速部署示例（Docker-Compose）" class="headerlink" title="快速部署示例（Docker Compose）"></a>快速部署示例（Docker Compose）</h1><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">services:</span></span><br><span class="line">  <span class="attr">homepage:</span></span><br><span class="line">    <span class="attr">image:</span> <span class="string">ghcr.io/gethomepage/homepage:latest</span></span><br><span class="line">    <span class="attr">container_name:</span> <span class="string">homepage</span></span><br><span class="line">    <span class="attr">ports:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="number">3000</span><span class="string">:3000</span></span><br><span class="line">    <span class="attr">volumes:</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/opt/docker/module/homepage/config:/app/config</span> <span class="comment"># Make sure your local config directory exists</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/var/run/docker.sock:/var/run/docker.sock</span> <span class="comment"># (optional) For docker integrations</span></span><br><span class="line">      <span class="bullet">-</span> <span class="string">/opt/docker/module/homepage/icons:/app/public/icons</span> <span class="comment"># 图标路径</span></span><br><span class="line">    <span class="attr">environment:</span></span><br><span class="line">      <span class="attr">HOMEPAGE_ALLOWED_HOSTS:</span> <span class="string">dawn01:3000,192.168.31.101:3000,0.0.0.0:3000,localhost:3000</span></span><br></pre></td></tr></table></figure><blockquote><p>访问 <a href="http://localhost:3000/">http://localhost:3000</a> 即可看到仪表盘界面。</p></blockquote><h1 id="官方文档"><a href="#官方文档" class="headerlink" title="官方文档"></a>官方文档</h1><p>GitHub 仓库：<a href="https://github.com/gethomepage/homepage">https://github.com/gethomepage/homepage</a></p><p>官方文档：<a href="https://gethomepage.dev/">https://gethomepage.dev</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 应用服务 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> homepage </tag>
+            
+            <tag> 美化 </tag>
+            
+            <tag> 导航 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
